@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Profile Card</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  
+  <div class="actions-top">
+    <button id="toggle-tema" type="button">Ganti Tema Gelap/Terang</button>
+  </div>
+  
+  <main class="container">
+    <section class="profile-card">
+      <!-- Status UI (Loading, Error, dll) -->
+      <div id="profile-status" data-state="idle" aria-live="polite">
+        Tekan tombol untuk memuat profil.
+      </div>
+      
+      <button id="btn-muat" type="button">Muat Profil</button>
+      <button id="btn-coba-lagi" type="button" hidden>Coba Lagi</button>
+
+      <!-- Konten Profil yang disembunyikan sampai sukses di-fetch -->
+      <div id="profile-content" hidden>
+        <header>
+          <h1 id="nama-profil">Nama</h1>
+          <p id="prodi-profil">Program Studi</p>
+        </header>
+        
+        <button id="btn-detail" type="button" aria-expanded="false">Lihat Detail</button>
+        <div id="detail-profil" hidden>
+          <p id="deskripsi-profil">Deskripsi profil...</p>
+        </div>
+
+        <hr>
+
+        <h2>Keterampilan</h2>
+        <ul id="daftar-keterampilan" aria-live="polite"></ul>
+
+        <form id="form-keterampilan" novalidate>
+          <label for="input-keterampilan">Tambah Keterampilan</label>
+          <input type="text" id="input-keterampilan" required placeholder="Masukkan nama keterampilan">
+          <small id="error-keterampilan" class="error"></small>
+          <button type="submit">Tambah Keterampilan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "nama": "Mahasiswa Teknik Informatika",
+  "prodi": "D3 Teknik Informatika",
+  "deskripsi": "Seorang pembelajar yang antusias mengeksplorasi Vanilla JavaScript, manipulasi DOM, dan implementasi proses Asynchronous untuk membangun antarmuka web interaktif.",
+  "keterampilan": [
+    { "id": 1, "nama": "HTML Semantik" },
+    { "id": 2, "nama": "CSS Flexbox & Responsif" },
+    { "id": 3, "nama": "Vanilla JavaScript" }
+  ]
+}

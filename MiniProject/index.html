@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klub Belajar "English for IT"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body id="top">
+    <!-- Header & Navigasi -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand">English4IT</a>
+            <!-- Tombol Navigasi Mobile -->
+            <button id="mobile-menu-btn" aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
+            <nav id="main-nav" aria-label="Navigasi Utama">
+                <a href="#program" class="nav-link">Program</a>
+                <a href="#jadwal" class="nav-link">Jadwal</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#kontak" class="nav-link">Pendaftaran</a>
+                <button id="toggle-tema" class="button-outline">Mode Gelap</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>Kuasai Bahasa Inggris, Percepat Karir IT-mu</h1>
+                <p>Bergabunglah dengan kelas diskusi interaktif kami. Pahami istilah teknis, bedah dokumentasi kode bersama, dan bersiaplah menghadapi dunia profesional global di bidang informatika.</p>
+                <a href="#kontak" class="button cta-button">Daftar Kelas Sekarang</a>
+            </div>
+        </section>
+
+        <section id="program" class="program-section">
+            <div class="container">
+                <h2>Program Unggulan Kami</h2>
+                <div class="card-list">
+                    <article class="card">
+                        <h3>Kosakata Teknis IT</h3>
+                        <p>Pelajari istilah-istilah esensial dalam pemrograman dan jaringan.</p>
+                    </article>
+                    <article class="card featured-card">
+                        <h3>Bedah Dokumentasi</h3>
+                        <p>Praktik langsung membaca dokumentasi resmi library, API, atau Git.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Praktik Presentasi</h3>
+                        <p>Simulasi presentasi KTI dan latihan wawancara teknis bahasa Inggris.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jadwal Section Dinamis & Filter -->
+        <section id="jadwal" class="jadwal-section container">
+            <h2>Jadwal Kegiatan</h2>
+            <div class="filter-wrapper">
+                <label for="filter-hari">Pilih Hari:</label>
+                <select id="filter-hari">
+                    <option value="Semua">Semua</option>
+                    <option value="Jumat">Jumat</option>
+                    <option value="Sabtu">Sabtu</option>
+                    <option value="Minggu">Minggu</option>
+                </select>
+            </div>
+            <p id="status-jadwal" role="status" aria-live="polite"></p>
+            <ul id="schedule-container" class="schedule-list">
+                <!-- Diisi oleh JS -->
+            </ul>
+        </section>
+
+        <!-- FAQ Section Baru -->
+        <section id="faq" class="container">
+            <h2>Pertanyaan Sering Diajukan (FAQ)</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-btn" aria-expanded="false">Siapa yang boleh ikut klub ini?</button>
+                    <div class="faq-answer"><p>Semua mahasiswa aktif dari berbagai tingkat.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" aria-expanded="false">Apakah ini gratis?</button>
+                    <div class="faq-answer"><p>Tentu saja! Program ini murni inisiatif kolaborasi antar mahasiswa IT.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Pendaftaran Tervalidasi -->
+        <section id="kontak" class="cta-bottom">
+            <div class="container">
+                <h2>Siap Meningkatkan Skill Kamu?</h2>
+                <form id="form-daftar" novalidate>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" required placeholder="Masukkan namamu">
+                        <small id="error-nama" class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" required placeholder="nama@email.com">
+                        <small id="error-email" class="error-msg"></small>
+                    </div>
+                    <button type="submit" class="button">Kirim Pendaftaran</button>
+                    <p id="status-pendaftaran" class="success-msg" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="btn-back-to-top" title="Kembali ke atas">⬆</button>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Klub Belajar English for IT.</p>
+        </div>
+    </footer>
+</body>
+</html>
