@@ -2,10 +2,8 @@
 const judulUtama = document.querySelector('#judul-utama');
 const status = document.querySelector('#status');
 const namaInput = document.querySelector('#nama');
-const jumlahKarakter =
- document.querySelector('#jumlah-karakter');
-const tombolUbahJudul =
- document.querySelector('#ubah-judul');
+const jumlahKarakter = document.querySelector('#jumlah-karakter');
+const tombolUbahJudul = document.querySelector('#ubah-judul');
 const tombolToggleStatus =
  document.querySelector('#toggle-status');
 console.log({
